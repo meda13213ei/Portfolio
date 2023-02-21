@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" style="
+    scroll-behavior: smooth;
+">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phanindra Medapati</title>
+    <link rel = "stylesheet" href = "CSS/styles.css">
+    <link rel = "icon" href = "images/favicon.ico">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+          rel = "stylesheet">
+    <script src = "https://kit.fontawesome.com/78890275e7.js" crossorigin = "anonymous"></script>
+</head>
+<body>
+    <div id="overlay" onclick="off()">
+        <div id="text">
+            <a href = "javascript:void(0)"></a>
+            <a href = "#Home">Home</a><br>
+            <a href = "#about">About</a><br>
+            <a href = "#skills-tab">Skills</a><br>
+            <a href = "#Projects">Projects</a><br>
+            <a href = "#contact-me">Contact</a><br>
+        </div>
+    </div>
+
+    <div id = "Home" >
+        <div class = "navbar" id = "naviBar">
+            <button id = "hamburger" class = "menu" onclick = "on()" style = "display: inline;">☰ Menu</button>
+            <p>Welcome to Phanindra's Portfolio</p>
+            <div class = "weblinks">
+                <a href = "https://www.linkedin.com/in/phanindramedapati/"><img class = "weblinks" src = "images/linkedin_logo.png"
+                                                                            alt = "linkedin-logo"
+                                                                            style = "width:3.5vw"></a>
+                <a href = "https://github.com/meda13213ei/"><img class = "weblinks" src = "images/GitHub-Logo.png"
+                                                                 alt = "Github_logo" style = "width:3.5vw"></a>
+            </div>
+        </div>
+        <div class = "intro">
+            <h1>Hi, I am Phanindra</h1>
+            <h2> I am a Controls Engineer</h2>
+        </div>
+    </div>
+    <div id = "about">
+        <img class = "Profile_image" src = "images/Phani.png" alt = "Profile_img"
+             style = "max-width: 100%;padding-top: 10vw;">
+        <h1>About me</h1>
+        <p> Masters Degree holder in Electrical Engineering with Major in Control Systems.
+            4+ years of experience with Material and Automotive control systems with experience in Programming PLC's,
+            6 Axis robots from Scratch, Modifying and troubleshooting existing Programs, Changing existing programs to
+            improve workflow and minimize production time, do RCA and eliminate the cause of downtimes.
+            Data Science enthusiast with basic knowledge of Python, Java, HTML, CSS, SQL database.
+        </p>
+    </div>
+    <div id = "skills-tab">
+        <h2 class = "title"><a id = "skills">Skills</a></h2>
+        <div class = "grid-container">
+            <div class="skill1">
+                <div class = "prog">
+                    <img class = "code-img" src = "images/plc.png" alt = "PLC-img">
+                </div>
+                <div class = "skill-1">
+                    <h3>PLC</h3>
+                    <p>Industrial working experience on Rockwell and Siemens PLC with ability to design systems from
+                        develop, implement, commission, handover to production and support it through its lifecycle.
+                        Well versed in ladder logic in AB, SIEMENS, YOKOGAWA, MITSUBISHI, with knowledge of Structured text in AB plC
+                    </p>
+                </div>
+            </div>
+            <div class="skill2">
+                <div class = "data">
+                    <img class = "code-img" src = "images/industrial-robot.png" alt = "Robot-img">
+                </div>
+                <div class = "skill-2">
+                    <h3>6-Axis Robots</h3>
+                    <p>Experience in Programming, Mastering, Troublshooting 6 axis robots(Cartesian Robots) Mainly FANUC.
+                    </p>
+                </div>
+            </div>
+            <div class ="skill3">
+                <div class = "www">
+                    <img class = "code-img" src = "images/world-wide-web.png" alt = "web-img">
+                </div>
+                <div class = "skill-3">
+                    <h3>HMI</h3>
+                    <p>Experince in programming Factory talk view studio, modifyng existing programs to improve visibility and
+                        access to equipment.
+                    </p>
+                </div>
+            </div>
+            <div class= "skill4">
+                <div class = "softtools">
+                    <img class = "code-img" src = "images/database.png" alt = "SQL-img"></div>
+                <div class = "skill-4">
+                    <h3>Data Analytics</h3>
+                    <p>5 years enterprise experience designing and implementing physical, logical, and conceptual schemas.
+                        Hands-on experience in most open-source and enterprise RDBMS.
+                    </p>
+                </div>
+            </div>
+            <div class= "skill5">
+                <div class = "tools">
+                    <img class = "code-img" src = "images/database.png" alt = "SQL-img"></div>
+                <div class = "skill-5">
+                    <h3>Web Development</h3>
+                    <p>Basic Knowledge of Web Development in HTML, CSS, PYTHON, Javascript. Working currently on
+                        developing industrial skill set.
+                    </p>
+                </div>
+            </div>
+            </div>
+    </div>
+    <div id = "Projects">
+        <img src = "images/experience.png" alt = "work experience image" width = "4%" height = "6%">
+        <div id = "personal-projects">
+        <h2>Personal Projects</h2>
+        <p>Home Automation using PLC.</p>
+            <p>web page development</p>
+            </div>
+    </div>
+    <div id = "contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Like My profile.?</h3>
+        <p> I'm currently open to work. Please click on the button below for contact details</p>
+        <a class = "btn" href ="contact_me.html">Contactme</a>
+    </div>
+    <div class = "copyrights">
+        <p>© 2023 Phanindra Medapati</p>
+    </div>
+    <script>
+        function on() {
+        document.getElementById("overlay").style.display = "block";
+        }
+        function off() {
+        document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+</html>
